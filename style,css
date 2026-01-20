@@ -208,3 +208,18 @@ details[open] summary{border-bottom:1px solid var(--line);background:rgba(37,99,
   .section-head{flex-direction:column;align-items:flex-start}
   .hero h1{font-size:34px}
 }
+
+/* --- HARD FIX: force SVG icon size everywhere --- */
+svg { 
+  width: 16px !important; 
+  height: 16px !important; 
+}
+
+.icon svg,
+.btn svg,
+.social-link svg,
+.contact-item svg {
+  width: 16px !important;
+  height: 16px !important;
+  display: block;
+}
