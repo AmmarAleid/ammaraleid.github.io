@@ -210,16 +210,29 @@ details[open] summary{border-bottom:1px solid var(--line);background:rgba(37,99,
 }
 
 /* --- HARD FIX: force SVG icon size everywhere --- */
-svg { 
-  width: 16px !important; 
-  height: 16px !important; 
+/* ===== Icon size hard fix (override everything) ===== */
+svg {
+  width: 18px !important;
+  height: 18px !important;
 }
 
-.icon svg,
-.btn svg,
-.social-link svg,
-.contact-item svg {
-  width: 16px !important;
-  height: 16px !important;
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 18px;
+}
+
+.icon svg {
+  width: 18px !important;
+  height: 18px !important;
   display: block;
+}
+
+/* Ensure icons inside buttons/links never stretch */
+.btn .icon,
+.social-link .icon,
+.contact-item .icon {
+  flex: 0 0 18px;
 }
