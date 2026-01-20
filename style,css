@@ -236,3 +236,12 @@ svg {
 .contact-item .icon {
   flex: 0 0 18px;
 }
+
+summary::after{
+  content: "▾";
+  color: var(--muted);
+  font-size: 14px;
+}
+details[open] summary::after{
+  content: "▴";
+}
