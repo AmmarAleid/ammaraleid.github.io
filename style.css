@@ -1,59 +1,198 @@
-/* ===== Premium polish patch (paste at end of style.css) ===== */
-
-/* Better type scale */
 :root{
-  --soft: #f6f8fc;          /* cleaner background */
-  --card: #ffffff;
-  --text: #0b1220;
-  --muted: #4b5563;
-  --line: rgba(2,6,23,.10);
-  --accent: #1d4ed8;        /* more premium blue */
-  --shadow: 0 12px 26px rgba(2,6,23,.10);
-  --radius: 16px;
+  --bg:#0b1220;
+  --bg2:#0f1a33;
+  --soft:#f6f8fc;
+  --card:#ffffff;
+  --text:#0b1220;
+  --muted:#4b5563;
+  --line:rgba(2,6,23,.10);
+  --accent:#1d4ed8;
+  --shadow:0 14px 28px rgba(2,6,23,.10);
+  --radius:16px;
 }
 
-body{ color: var(--text); }
-p, li{ font-size: 15px; }
-h2{ letter-spacing: -0.01em; }
-.card{ box-shadow: var(--shadow); }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;background:var(--soft);color:var(--text)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-/* Fix icons sizing everywhere (FontAwesome) */
-i.fa-solid, i.fa-brands, i.fa-regular{
-  font-size: 14px !important;
-  line-height: 1 !important;
-  vertical-align: -0.1em;
-}
-.btn i, .links i, h2 i{
-  width: 18px;
-  text-align: center;
-}
+.container{width:min(1100px,92%);margin:0 auto}
 
-/* Buttons look sharper */
-.btn{
-  border-radius: 14px;
-  padding: 10px 14px;
-}
-.btn.primary{ background: var(--accent); }
+.skip{position:absolute;left:-999px;top:10px;background:#fff;color:#000;padding:8px 10px;border-radius:10px}
+.skip:focus{left:10px;z-index:999}
 
-/* Improve accordion summary layout */
-summary{
-  padding: 14px 16px;
-}
-.sum-title{ font-weight: 900; }
-.sum-meta{ opacity: .9; }
-
-/* Chips spacing (fix “stuck together” look) */
-.chips{ gap: 10px; }
-.chips span{
-  padding: 7px 10px;
-  font-weight: 800;
-}
-
-/* Reduce header “heaviness” */
+/* Header */
 .header{
-  padding: 26px 0 22px;
+  background: radial-gradient(900px 400px at 10% 10%, rgba(29,78,216,.28), transparent),
+              radial-gradient(900px 400px at 90% 10%, rgba(255,255,255,.08), transparent),
+              linear-gradient(180deg, var(--bg), var(--bg2));
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  padding:24px 0 18px;
 }
-.headline{
-  font-size: 15px;
-  opacity: .95;
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.brand{display:flex;align-items:center;gap:12px}
+.avatar{
+  width:44px;height:44px;border-radius:14px;
+  display:grid;place-items:center;
+  font-weight:900;
+  background:rgba(29,78,216,.30);
+  border:1px solid rgba(255,255,255,.14);
+}
+.brand-text h1{margin:0;font-size:20px;letter-spacing:-.01em}
+.brand-text p{margin:2px 0 0;color:rgba(226,232,255,.88);font-size:13px}
+
+/* Nav */
+.nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.nav a{
+  color:rgba(226,232,255,.96);
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.10);
+  font-size:13px;
+}
+.nav a:hover{background:rgba(255,255,255,.06);text-decoration:none}
+.nav .cta{background:rgba(29,78,216,.25);border-color:rgba(29,78,216,.40)}
+
+/* Hero */
+.hero{padding:14px 0 18px}
+.kicker{margin:0 0 8px;letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:rgba(226,232,255,.75)}
+.hero-title{margin:0 0 8px;font-size:30px;letter-spacing:-.02em}
+.hero-sub{margin:0;max-width:85ch;color:rgba(226,232,255,.92);font-size:15px}
+
+.hero-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  font-weight:900;
+}
+.btn:hover{text-decoration:none;opacity:.96}
+.btn.primary{background:var(--accent);border-color:transparent}
+
+.links{margin-top:12px;display:flex;gap:14px;flex-wrap:wrap}
+.links a{color:rgba(226,232,255,.96);font-size:13px}
+.links a i{width:18px;text-align:center}
+
+/* Icon sizing (fixes the “huge icon” issue) */
+i.fa-solid, i.fa-brands, i.fa-regular{
+  font-size:14px !important;
+  line-height:1 !important;
+  vertical-align:-0.10em;
+}
+
+/* Main */
+main{padding:22px 0 54px}
+
+.section{margin-top:22px}
+.section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+.section-head h3{
+  margin:0;
+  font-size:20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.section-head h3 i{font-size:14px !important}
+.section-head p{margin:0;color:var(--muted);font-size:13px}
+
+/* Cards & grids */
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+}
+.card h4{margin:0 0 8px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.linkcard:hover{transform:translateY(-2px);transition:120ms ease;text-decoration:none}
+
+/* Accordion */
+.accordion{display:grid;gap:10px}
+details{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 10px 18px rgba(2,6,23,.06);
+}
+summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+.sum-title{font-weight:950}
+.sum-meta{color:var(--muted);font-size:12px}
+summary::after{content:"▾";color:var(--muted);font-size:14px}
+details[open] summary::after{content:"▴"}
+details[open] summary{border-bottom:1px solid var(--line);background:rgba(29,78,216,.04)}
+.content{padding:0 16px 14px;color:var(--muted)}
+.content ul{margin:10px 0 0;padding-left:18px}
+.content li{margin:6px 0}
+.source-note{margin:10px 0 0;font-size:12px;color:#6b7280}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{
+  font-size:12px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#eef2ff;
+  border:1px solid rgba(29,78,216,.18);
+  color:#1e293b;
+  font-weight:900;
+}
+
+/* 2-column accordion for skills */
+.accordion.two{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+/* Footer */
+.footer{
+  padding:18px 0 30px;
+  color:#64748b;
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+.footer-inner{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+.sep{opacity:.5}
+.muted{opacity:.85}
+
+/* Responsive */
+@media (max-width: 980px){
+  .header-inner{gap:10px}
+  .hero-title{font-size:26px}
+  .grid3{grid-template-columns:1fr}
+  .accordion.two{grid-template-columns:1fr}
 }
