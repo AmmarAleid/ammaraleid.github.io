@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main   # change to master if your repo uses master
+  branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -9,13 +9,17 @@ collections:
   - name: "site"
     label: "Site Content"
     files:
-      - label: "Homepage Content"
+      - label: "Homepage"
         name: "home"
         file: "content.json"
         fields:
-          - { label: "Hero kicker", name: "heroKicker", widget: "string" }
-          - { label: "Hero title", name: "heroTitle", widget: "string" }
-          - { label: "Hero subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Role", name: "role", widget: "string" }
+          - { label: "Hero Kicker", name: "heroKicker", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle (supports basic HTML like <strong>)", name: "heroSubtitle", widget: "text" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "GitHub URL", name: "github", widget: "string" }
           - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "CV file name (e.g. Ammar_Al-Eid_CV.pdf)", name: "cvFile", widget: "string" }
+
