@@ -1,3 +1,6 @@
+# Pages CMS configuration
+# This file tells Pages CMS what content can be edited
+
 media:
   input: assets/uploads
   output: /assets/uploads
@@ -7,32 +10,67 @@ content:
     label: Homepage Content
     type: file
     path: content.json
+
     fields:
-      - { name: name, label: Name, type: string }
-      - { name: role, label: Role, type: string }
-      - { name: heroKicker, label: Hero Kicker, type: string }
-      - { name: heroTitle, label: Hero Title, type: string }
-      - { name: heroSubtitle, label: Hero Subtitle, type: text }
-      - { name: email, label: Email, type: string }
-      - { name: github, label: GitHub URL, type: string }
-      - { name: linkedin, label: LinkedIn URL, type: string }
-      - { name: cvFile, label: CV File Name, type: string }
+      - name: name
+        label: Name
+        type: string
+
+      - name: role
+        label: Role
+        type: string
+
+      - name: heroKicker
+        label: Hero Kicker
+        type: string
+
+      - name: heroTitle
+        label: Hero Title
+        type: string
+
+      - name: heroSubtitle
+        label: Hero Subtitle
+        type: text
+
+      - name: email
+        label: Email
+        type: string
+
+      - name: github
+        label: GitHub URL
+        type: string
+
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+
+      - name: cvFile
+        label: CV File Name
+        type: string
 
       - name: about
         label: About Cards
         type: object
         list: true
         fields:
-          - { name: title, label: Title, type: string }
-          - { name: body, label: Body, type: text }
+          - name: title
+            label: Title
+            type: string
+          - name: body
+            label: Body
+            type: text
 
       - name: projects
         label: Projects
         type: object
         list: true
         fields:
-          - { name: title, label: Title, type: string }
-          - { name: meta, label: Meta, type: string }
+          - name: title
+            label: Title
+            type: string
+          - name: meta
+            label: Meta
+            type: string
           - name: bullets
             label: Bullets
             type: string
@@ -43,8 +81,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: title, label: Title, type: string }
-          - { name: meta, label: Meta, type: string }
+          - name: title
+            label: Title
+            type: string
+          - name: meta
+            label: Meta
+            type: string
           - name: chips
             label: Chips
             type: string
@@ -55,8 +97,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: title, label: Title, type: string }
-          - { name: meta, label: Meta, type: string }
+          - name: title
+            label: Title
+            type: string
+          - name: meta
+            label: Meta
+            type: string
           - name: bullets
             label: Bullets
             type: string
