@@ -10,14 +10,8 @@
         content="Telecom Solution Architect specializing in BSS, OCS and OSS integration using TM Forum Open APIs. 20+ years delivering billing, charging, mediation, provisioning, roaming and API-based solutions." />
   <meta name="theme-color" content="#0b1220" />
 
-  <!-- Open Graph (nice previews when sharing on LinkedIn/WhatsApp) -->
-  <meta property="og:title" content="Ammar Al-Eid — Telecom Solution Architect (BSS / OCS / OSS)" />
-  <meta property="og:description" content="BSS/OCS/OSS integration architect focused on TMF Open APIs, charging & billing, and operable delivery." />
-  <meta property="og:type" content="website" />
-
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome icons (no integrity to avoid load errors) -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -33,8 +27,8 @@
       <div class="brand">
         <div class="avatar" aria-hidden="true">AE</div>
         <div class="brand-text">
-          <h1>Ammar Al-Eid</h1>
-          <p>Telecom Solution Architect — BSS / OCS / OSS</p>
+          <h1 id="name">Ammar Al-Eid</h1>
+          <p id="role">Telecom Solution Architect — BSS / OCS / OSS</p>
         </div>
       </div>
 
@@ -48,13 +42,13 @@
     </div>
 
     <div class="container hero">
-      <p class="kicker">BSS • OCS • OSS • TMF Open APIs • Integration Architecture</p>
+      <p class="kicker" id="heroKicker">BSS • OCS • OSS • TMF Open APIs • Integration Architecture</p>
 
-      <h2 class="hero-title">
+      <h2 class="hero-title" id="heroTitle">
         Designing scalable BSS & charging architectures with TMF Open APIs
       </h2>
 
-      <p class="hero-sub">
+      <p class="hero-sub" id="heroSubtitle">
         Telecom Solution Architect with 20+ years of experience delivering
         <strong>BSS, OCS and OSS integrations</strong>.
         Specialized in TM Forum Open API–based architectures that reduce integration risk,
@@ -64,21 +58,19 @@
       <div class="hero-actions">
         <a class="btn primary" href="#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
         <a class="btn" href="#skills"><i class="fa-solid fa-layer-group"></i> Skills</a>
-        <a class="btn" href="mailto:Ammar.Aleid@gmail.com"><i class="fa-solid fa-paper-plane"></i> Email Me</a>
-         <a class="btn" href="Ammar_Al-Eid_CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        <a class="btn" id="emailBtn" href="mailto:Ammar.Aleid@gmail.com"><i class="fa-solid fa-paper-plane"></i> Email Me</a>
+        <a class="btn" id="cvBtn" href="Ammar_Al-Eid_CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
       </div>
 
       <div class="links">
-        <a href="mailto:Ammar.Aleid@gmail.com"><i class="fa-solid fa-at"></i> Ammar.Aleid@gmail.com</a>
-        <a href="https://github.com/AmmarAleid" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-        <!-- Replace with your real LinkedIn profile -->
-        <a href="https://www.linkedin.com/in/ammaraleid" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a id="emailLink" href="mailto:Ammar.Aleid@gmail.com"><i class="fa-solid fa-at"></i> <span id="emailText">Ammar.Aleid@gmail.com</span></a>
+        <a id="githubLink" href="https://github.com/AmmarAleid" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a id="linkedinLink" href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
       </div>
     </div>
   </header>
 
   <main id="content" class="container">
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="section-head">
         <h3><i class="fa-solid fa-user"></i> About</h3>
@@ -86,32 +78,22 @@
 
       <div class="grid3">
         <article class="card">
-          <h4>Profile</h4>
-          <p>
-            Telecom Solution Architect specializing in BSS, OCS and OSS integration,
-            with deep expertise in billing, charging and service lifecycle management.
-          </p>
+          <h4 id="about1Title">Profile</h4>
+          <p id="about1Body">Telecom Solution Architect specializing in BSS, OCS and OSS integration, with deep expertise in billing, charging and service lifecycle management.</p>
         </article>
 
         <article class="card">
-          <h4>Architecture Focus</h4>
-          <p>
-            TM Forum Open API–first integration design, API governance,
-            clean interface contracts, and scalable, support-ready architectures.
-          </p>
+          <h4 id="about2Title">Architecture Focus</h4>
+          <p id="about2Body">TM Forum Open API–first integration design, API governance, clean interface contracts, and scalable, support-ready architectures.</p>
         </article>
 
         <article class="card">
-          <h4>Leadership</h4>
-          <p>
-            Strong background in delivery governance, cross-team coordination,
-            SIT/UAT leadership, and production stabilization.
-          </p>
+          <h4 id="about3Title">Leadership</h4>
+          <p id="about3Body">Strong background in delivery governance, cross-team coordination, SIT/UAT leadership, and production stabilization.</p>
         </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="section-head">
         <h3><i class="fa-solid fa-diagram-project"></i> Projects</h3>
@@ -120,11 +102,11 @@
       <div class="accordion">
         <details open>
           <summary>
-            <span class="sum-title">1&1 Mobilfunk — Product & Solution Architecture</span>
-            <span class="sum-meta">Open APIs • Messaging • Fraud • 5G / IoT</span>
+            <span class="sum-title" id="proj1Title">1&1 Mobilfunk — Product & Solution Architecture</span>
+            <span class="sum-meta" id="proj1Meta">Open APIs • Messaging • Fraud • 5G / IoT</span>
           </summary>
           <div class="content">
-            <ul>
+            <ul id="proj1List">
               <li>Designed Open API–based integration approaches for fraud prevention and API monetization.</li>
               <li>Architecture contributions for A2P/P2P messaging, RCS/RBM and operator platform initiatives.</li>
               <li>Participation in GSMA and Open Gateway initiatives.</li>
@@ -134,11 +116,11 @@
 
         <details>
           <summary>
-            <span class="sum-title">Asiacell — Ericsson CBiO Operations & Architecture</span>
-            <span class="sum-meta">BSCS iX • CS5 • Billing • Roaming</span>
+            <span class="sum-title" id="proj2Title">Asiacell — Ericsson CBiO Operations & Architecture</span>
+            <span class="sum-meta" id="proj2Meta">BSCS iX • CS5 • Billing • Roaming</span>
           </summary>
           <div class="content">
-            <ul>
+            <ul id="proj2List">
               <li>End-to-end responsibility for billing, charging, mediation and provisioning domains.</li>
               <li>Architected and governed billing cycles, rerating, reconciliation and revenue assurance.</li>
               <li>Roaming TAP/RAP handling and interconnect configuration.</li>
@@ -148,11 +130,11 @@
 
         <details>
           <summary>
-            <span class="sum-title">Ericsson — SIT/UAT Leadership</span>
-            <span class="sum-meta">Testing • Release Governance</span>
+            <span class="sum-title" id="proj3Title">Ericsson — SIT/UAT Leadership</span>
+            <span class="sum-meta" id="proj3Meta">Testing • Release Governance</span>
           </summary>
           <div class="content">
-            <ul>
+            <ul id="proj3List">
               <li>Led SIT/UAT teams and test strategy across multiple BSS/charging interfaces.</li>
               <li>Owned defect triage, regression governance and release readiness.</li>
             </ul>
@@ -161,7 +143,6 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="section-head">
         <h3><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h3>
@@ -170,47 +151,36 @@
       <div class="accordion two">
         <details open>
           <summary>
-            <span class="sum-title">BSS / OSS / OCS Architecture</span>
-            <span class="sum-meta">TMF • Integration • Governance</span>
+            <span class="sum-title" id="skills1Title">BSS / OSS / OCS Architecture</span>
+            <span class="sum-meta" id="skills1Meta">TMF • Integration • Governance</span>
           </summary>
-          <div class="content chips">
-            <span>TMF Open APIs</span>
-            <span>BSS integration</span>
-            <span>OCS / Charging</span>
-            <span>OSS orchestration</span>
-            <span>API governance</span>
+          <div class="content chips" id="skills1Chips">
+            <span>TMF Open APIs</span><span>BSS integration</span><span>OCS / Charging</span><span>OSS orchestration</span><span>API governance</span>
           </div>
         </details>
 
         <details>
           <summary>
-            <span class="sum-title">Billing & Charging</span>
-            <span class="sum-meta">Postpaid • Prepaid • Convergent</span>
+            <span class="sum-title" id="skills2Title">Billing & Charging</span>
+            <span class="sum-meta" id="skills2Meta">Postpaid • Prepaid • Convergent</span>
           </summary>
-          <div class="content chips">
-            <span>Billing cycles</span>
-            <span>Rerating</span>
-            <span>Charging rules</span>
-            <span>Revenue assurance</span>
+          <div class="content chips" id="skills2Chips">
+            <span>Billing cycles</span><span>Rerating</span><span>Charging rules</span><span>Revenue assurance</span>
           </div>
         </details>
 
         <details>
           <summary>
-            <span class="sum-title">Domains</span>
-            <span class="sum-meta">Roaming • Interconnect • APIs</span>
+            <span class="sum-title" id="skills3Title">Domains</span>
+            <span class="sum-meta" id="skills3Meta">Roaming • Interconnect • APIs</span>
           </summary>
-          <div class="content chips">
-            <span>Roaming (TAP/RAP)</span>
-            <span>Interconnect</span>
-            <span>Fraud prevention</span>
-            <span>API monetization</span>
+          <div class="content chips" id="skills3Chips">
+            <span>Roaming (TAP/RAP)</span><span>Interconnect</span><span>Fraud prevention</span><span>API monetization</span>
           </div>
         </details>
       </div>
     </section>
 
-    <!-- ACHIEVEMENTS -->
     <section id="achievements" class="section">
       <div class="section-head">
         <h3><i class="fa-solid fa-award"></i> Achievements</h3>
@@ -219,11 +189,11 @@
       <div class="accordion">
         <details open>
           <summary>
-            <span class="sum-title">Operational Scale & Stability</span>
-            <span class="sum-meta">Growth • Reliability</span>
+            <span class="sum-title" id="ach1Title">Operational Scale & Stability</span>
+            <span class="sum-meta" id="ach1Meta">Growth • Reliability</span>
           </summary>
           <div class="content">
-            <ul>
+            <ul id="ach1List">
               <li>Supported large-scale subscriber growth through improved architecture and operational governance.</li>
               <li>Improved monitoring, alerting and incident response across BSS and charging platforms.</li>
             </ul>
@@ -232,11 +202,11 @@
 
         <details>
           <summary>
-            <span class="sum-title">Delivery & Quality</span>
-            <span class="sum-meta">SIT/UAT • Releases</span>
+            <span class="sum-title" id="ach2Title">Delivery & Quality</span>
+            <span class="sum-meta" id="ach2Meta">SIT/UAT • Releases</span>
           </summary>
           <div class="content">
-            <ul>
+            <ul id="ach2List">
               <li>Led SIT/UAT and ensured release readiness across multiple vendors and interfaces.</li>
               <li>Reduced production risk through structured validation and reconciliation processes.</li>
             </ul>
@@ -245,31 +215,31 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="section-head">
         <h3><i class="fa-solid fa-paper-plane"></i> Contact</h3>
+        <p>Preferred contact: email.</p>
       </div>
 
       <div class="grid3">
-        <a class="card linkcard" href="mailto:Ammar.Aleid@gmail.com">
+        <a class="card linkcard" id="contactEmail" href="mailto:Ammar.Aleid@gmail.com">
           <h4><i class="fa-solid fa-envelope"></i> Email</h4>
-          <p>Ammar.Aleid@gmail.com</p>
+          <p id="contactEmailText">Ammar.Aleid@gmail.com</p>
         </a>
 
-        <a class="card linkcard" href="Ammar_Al-Eid_CV.pdf" download>
+        <a class="card linkcard" id="contactCV" href="Ammar_Al-Eid_CV.pdf" download>
           <h4><i class="fa-solid fa-file-arrow-down"></i> Download CV</h4>
           <p>Ammar_Al-Eid_CV.pdf</p>
         </a>
 
-        <a class="card linkcard" href="https://github.com/AmmarAleid" target="_blank" rel="noreferrer">
+        <a class="card linkcard" id="contactGithub" href="https://github.com/AmmarAleid" target="_blank" rel="noreferrer">
           <h4><i class="fa-brands fa-github"></i> GitHub</h4>
           <p>github.com/AmmarAleid</p>
         </a>
 
-        <a class="card linkcard" href="https://www.linkedin.com/in/ammaraleid/" target="_blank" rel="noreferrer">
+        <a class="card linkcard" id="contactLinkedin" href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" rel="noreferrer">
           <h4><i class="fa-brands fa-linkedin"></i> LinkedIn</h4>
-          <p>linkedin.com/in/ammaraleid</p>
+          <p>linkedin.com/in/YOUR_PROFILE</p>
         </a>
 
         <a class="card linkcard" href="#top">
@@ -284,12 +254,86 @@
     <div class="container footer-inner">
       <span>© <span id="year"></span> Ammar Al-Eid</span>
       <span class="sep">•</span>
-      <span class="muted">GitHub Pages</span>
+      <span class="muted">GitHub Pages / Netlify</span>
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    async function loadContent() {
+      try {
+        const res = await fetch("./content.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+
+        if (data.name) document.getElementById("name").textContent = data.name;
+        if (data.role) document.getElementById("role").textContent = data.role;
+        if (data.heroKicker) document.getElementById("heroKicker").textContent = data.heroKicker;
+        if (data.heroTitle) document.getElementById("heroTitle").textContent = data.heroTitle;
+        if (data.heroSubtitle) document.getElementById("heroSubtitle").innerHTML = data.heroSubtitle;
+
+        if (data.email) {
+          const mailto = "mailto:" + data.email;
+          document.getElementById("emailBtn").href = mailto;
+          document.getElementById("emailLink").href = mailto;
+          document.getElementById("emailText").textContent = data.email;
+          document.getElementById("contactEmail").href = mailto;
+          document.getElementById("contactEmailText").textContent = data.email;
+        }
+        if (data.github) {
+          document.getElementById("githubLink").href = data.github;
+          document.getElementById("contactGithub").href = data.github;
+        }
+        if (data.linkedin) {
+          document.getElementById("linkedinLink").href = data.linkedin;
+          document.getElementById("contactLinkedin").href = data.linkedin;
+        }
+        if (data.cvFile) {
+          document.getElementById("cvBtn").href = data.cvFile;
+          document.getElementById("contactCV").href = data.cvFile;
+        }
+
+        if (data.about?.[0]) { document.getElementById("about1Title").textContent = data.about[0].title; document.getElementById("about1Body").textContent = data.about[0].body; }
+        if (data.about?.[1]) { document.getElementById("about2Title").textContent = data.about[1].title; document.getElementById("about2Body").textContent = data.about[1].body; }
+        if (data.about?.[2]) { document.getElementById("about3Title").textContent = data.about[2].title; document.getElementById("about3Body").textContent = data.about[2].body; }
+
+        function setList(id, items) {
+          if (!Array.isArray(items)) return;
+          const ul = document.getElementById(id);
+          ul.innerHTML = "";
+          items.forEach(t => {
+            const li = document.createElement("li");
+            li.textContent = t;
+            ul.appendChild(li);
+          });
+        }
+        function setChips(id, chips) {
+          if (!Array.isArray(chips)) return;
+          const box = document.getElementById(id);
+          box.innerHTML = "";
+          chips.forEach(c => {
+            const s = document.createElement("span");
+            s.textContent = c;
+            box.appendChild(s);
+          });
+        }
+
+        if (data.projects?.[0]) { document.getElementById("proj1Title").textContent = data.projects[0].title; document.getElementById("proj1Meta").textContent = data.projects[0].meta; setList("proj1List", data.projects[0].bullets); }
+        if (data.projects?.[1]) { document.getElementById("proj2Title").textContent = data.projects[1].title; document.getElementById("proj2Meta").textContent = data.projects[1].meta; setList("proj2List", data.projects[1].bullets); }
+        if (data.projects?.[2]) { document.getElementById("proj3Title").textContent = data.projects[2].title; document.getElementById("proj3Meta").textContent = data.projects[2].meta; setList("proj3List", data.projects[2].bullets); }
+
+        if (data.skills?.[0]) { document.getElementById("skills1Title").textContent = data.skills[0].title; document.getElementById("skills1Meta").textContent = data.skills[0].meta; setChips("skills1Chips", data.skills[0].chips); }
+        if (data.skills?.[1]) { document.getElementById("skills2Title").textContent = data.skills[1].title; document.getElementById("skills2Meta").textContent = data.skills[1].meta; setChips("skills2Chips", data.skills[1].chips); }
+        if (data.skills?.[2]) { document.getElementById("skills3Title").textContent = data.skills[2].title; document.getElementById("skills3Meta").textContent = data.skills[2].meta; setChips("skills3Chips", data.skills[2].chips); }
+
+        if (data.achievements?.[0]) { document.getElementById("ach1Title").textContent = data.achievements[0].title; document.getElementById("ach1Meta").textContent = data.achievements[0].meta; setList("ach1List", data.achievements[0].bullets); }
+        if (data.achievements?.[1]) { document.getElementById("ach2Title").textContent = data.achievements[1].title; document.getElementById("ach2Meta").textContent = data.achievements[1].meta; setList("ach2List", data.achievements[1].bullets); }
+      } catch (err) {
+        console.warn("content.json not loaded; showing default HTML content.", err);
+      }
+    }
+    loadContent();
   </script>
 </body>
 </html>
