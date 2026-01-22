@@ -1,8 +1,66 @@
 {
+  "name": "Ammar Al-Eid",
+  "role": "Telecom Solution Architect — BSS / OCS / OSS",
   "heroKicker": "BSS • OCS • OSS • TMF Open APIs • Integration Architecture",
   "heroTitle": "Designing scalable BSS & charging architectures with TMF Open APIs",
-  "heroSubtitle": "Telecom Solution Architect with 20+ years of experience delivering BSS, OCS and OSS integrations. Specialized in TM Forum Open API–based architectures that reduce integration risk, improve operability, and accelerate service launch.",
+  "heroSubtitle": "Telecom Solution Architect with 20+ years of experience delivering <strong>BSS, OCS and OSS integrations</strong>. Specialized in TM Forum Open API–based architectures that reduce integration risk, improve operability, and accelerate service launch.",
   "email": "Ammar.Aleid@gmail.com",
   "github": "https://github.com/AmmarAleid",
-  "linkedin": "https://www.linkedin.com/in/YOUR_PROFILE"
+  "linkedin": "https://www.linkedin.com/in/YOUR_PROFILE",
+  "cvFile": "Ammar_Al-Eid_CV.pdf",
+  "about": [
+    { "title": "Profile", "body": "Telecom Solution Architect specializing in BSS, OCS and OSS integration, with deep expertise in billing, charging and service lifecycle management." },
+    { "title": "Architecture Focus", "body": "TM Forum Open API–first integration design, API governance, clean interface contracts, and scalable, support-ready architectures." },
+    { "title": "Leadership", "body": "Strong background in delivery governance, cross-team coordination, SIT/UAT leadership, and production stabilization." }
+  ],
+  "projects": [
+    { "title": "1&1 Mobilfunk — Product & Solution Architecture",
+      "meta": "Open APIs • Messaging • Fraud • 5G / IoT",
+      "bullets": [
+        "Designed Open API–based integration approaches for fraud prevention and API monetization.",
+        "Architecture contributions for A2P/P2P messaging, RCS/RBM and operator platform initiatives.",
+        "Participation in GSMA and Open Gateway initiatives."
+      ]
+    },
+    { "title": "Asiacell — Ericsson CBiO Operations & Architecture",
+      "meta": "BSCS iX • CS5 • Billing • Roaming",
+      "bullets": [
+        "End-to-end responsibility for billing, charging, mediation and provisioning domains.",
+        "Architected and governed billing cycles, rerating, reconciliation and revenue assurance.",
+        "Roaming TAP/RAP handling and interconnect configuration."
+      ]
+    },
+    { "title": "Ericsson — SIT/UAT Leadership",
+      "meta": "Testing • Release Governance",
+      "bullets": [
+        "Led SIT/UAT teams and test strategy across multiple BSS/charging interfaces.",
+        "Owned defect triage, regression governance and release readiness."
+      ]
+    }
+  ],
+  "skills": [
+    { "title": "BSS / OSS / OCS Architecture", "meta": "TMF • Integration • Governance",
+      "chips": ["TMF Open APIs","BSS integration","OCS / Charging","OSS orchestration","API governance"]
+    },
+    { "title": "Billing & Charging", "meta": "Postpaid • Prepaid • Convergent",
+      "chips": ["Billing cycles","Rerating","Charging rules","Revenue assurance"]
+    },
+    { "title": "Domains", "meta": "Roaming • Interconnect • APIs",
+      "chips": ["Roaming (TAP/RAP)","Interconnect","Fraud prevention","API monetization"]
+    }
+  ],
+  "achievements": [
+    { "title": "Operational Scale & Stability", "meta": "Growth • Reliability",
+      "bullets": [
+        "Supported large-scale subscriber growth through improved architecture and operational governance.",
+        "Improved monitoring, alerting and incident response across BSS and charging platforms."
+      ]
+    },
+    { "title": "Delivery & Quality", "meta": "SIT/UAT • Releases",
+      "bullets": [
+        "Led SIT/UAT and ensured release readiness across multiple vendors and interfaces.",
+        "Reduced production risk through structured validation and reconciliation processes."
+      ]
+    }
+  ]
 }
