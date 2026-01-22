@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main   # change to master if your repo uses master
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - label: "Homepage Content"
+        name: "home"
+        file: "content.json"
+        fields:
+          - { label: "Hero kicker", name: "heroKicker", widget: "string" }
+          - { label: "Hero title", name: "heroTitle", widget: "string" }
+          - { label: "Hero subtitle", name: "heroSubtitle", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
